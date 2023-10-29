@@ -1,3 +1,8 @@
+from flask import Flask, request, jsonify
+import sqlite3
+import jwt
+from datetime import datetime, timedelta
+
 # /auth endpoint
 @app.route('/auth', methods=['POST'])
 def auth():
